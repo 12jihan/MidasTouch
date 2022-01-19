@@ -9,12 +9,13 @@ midastouch() {
     echo "what do you want to name your project? "
     read -r name
 
-    printf "is %s ok as a project name? " Jeh${name^}Tool
-    read -p "Yes (y) or No (n): " -r answer
+    printf "is %s ok as a project name?\n" "Jeh${(C)name}Tool"
+    echo "Yes (y) or No (n): " 
+    read answer
 
-    if [ $answer == "y" ] || [ $answer == "Y" ]; then
-        if [ ${#name} -gt 0 ]; then
-            name="Jeh${name^}Tool"
+    if [[ $answer == "y" ]] || [[ $answer == "Y" ]]; then
+        if [[ ${#name} -gt 0 ]]; then
+            name="Jeh${(C)name}Tool"
             echo "$name Project Created!"
             mkdir -p "./$name/src/main/"
             mkdir -p "./$name/src/test/"
