@@ -1,19 +1,9 @@
-#!/bin/sh
+#!/bin/zsh
 
-# Author : Jareem E. Hoff
-# Copyright (c) Tutorialspoint.com
+# Author: Jareem E. Hoff
+# Copyright (c) www.Jehoff.com
 # Script follows here:
-appstarter="package main;\n\n\tpublic class App {\n\tpublic static void main(String[] args) {\n\tSystem.out.println(\"Hello World!\");\n\t }\n}\n"
 
-appteststarter='
-package test;
-
-public class App {
-    public static void main(String[] args) {
-        System.out.println("Hello World!");
-    }
-}
-'
 midastouch() {
     echo $0
     echo "what do you want to name your project? "
