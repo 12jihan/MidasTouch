@@ -15,6 +15,7 @@ midastouch() {
         if [ ${#name} -gt 0 ]; then
             name="Jeh${name^}Tool"
             echo "$name Project Created!"
+            cd "../"
             mkdir -p "./$name/src/main/"
             mkdir -p "./$name/src/test/"
 
