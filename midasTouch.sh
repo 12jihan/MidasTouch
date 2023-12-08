@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Author : Jareem E. Hoff
-# Copyright (c) Tutorialspoint.com
+# Copyright (c) www.jehoff.com
 # Script follows here:
 midastouch() {
     echo $0
